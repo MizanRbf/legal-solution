@@ -21,12 +21,18 @@
       }
     }
   </script>
+ <!-- Google Font -->
+  <style>
+    .text-primary{
+      font-family: "EB Garamond", serif;
+    }
+  </style>
 </head>
-<body>
+<body class="text-primary">
   <!-- Header Start -->
    <header class="container mx-auto">
      <!-- Navbar -->
-     <div class="navbar bg-base-100">
+     <div class="navbar bg-base-100 mt-6">
       <div class="navbar-start">
         <div class="dropdown">
           <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -61,7 +67,7 @@
           <img class="" src="images/logo2.png" alt="">
       </div>
       <div class="navbar-center hidden lg:flex">
-        <ul class="menu menu-horizontal px-1">
+        <ul class="menu menu-horizontal text-black px-1">
           <li><a>Home</a></li>
           <li><a>Service</a></li>
           <li><a>Cases</a></li>
@@ -70,14 +76,27 @@
         </ul>
       </div>
       <div class="navbar-end">
-        <a class="btn bg-legal-primary py-4 px-8">Free Consultation</a>
+        <a class="btn bg-legal-primary py-4 px-8 text-white">Free Consultation</a>
       </div>
     </div>
 
     <!-- Banner Start -->
-     <div>
-       <img src="" alt="">
-     </div>
+    <div
+    class="hero w-[90%] md:w-full mx-auto md:mx-0 mt-12 py-28 lg:py-36 rounded-lg"
+    style="background-image: url(images/banner.png);">
+    <div class="hero-content text-neutral-content text-center">
+      <div class="">
+        <h1 class="mb-5 text-7xl font-extrabold">We Provide Effective <br>Legal Solutions</h1>
+        <p class="mb-5 text-[#E7E7E7] text-4">
+          There are many variations of passages of Lorem Ipsum available, but the majority <br> have suffered alteration in some form, by injected humour.
+        </p>
+        <div class="flex gap-4 justify-center">
+          <input class="w-[100%] rounded-lg pl-4" type="text" placeholder="Search your service">
+          <a class="btn bg-legal-primary py-4 px-8 border-none text-white">Search</a>
+        </div>
+      </div>
+    </div>
+  </div>
    </header>
    <!-- Main Section -->
     <main>
