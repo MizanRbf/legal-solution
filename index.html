@@ -9,9 +9,7 @@
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Font-awesome cdn -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- Tailwind cdn -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -289,11 +287,11 @@
         </p>
       </div>
       <!-- Contact Information Container -->
-      <div class="flex">
+      <div class="md:flex gap-6">
         <!-- Information Card Container -->
-        <div class="grid md:grid-cols-2 text-black gap-0 mx-auto">
+        <div class="grid md:grid-cols-2 text-black gap-0 mx-auto md:w-1/2">
           <!-- Card 1 -->
-          <div class="card bg-base-100 border md:border-t-0 md:border-l-0 border-r-[#ddd] rounded-none relative bg-[#dddddd57]">
+          <div class="card bg-base-100 border-b md:border md:border-t-0 md:border-l-0 border-[#ccc7c7] rounded-none relative bg-[#dddddd57]">
             <div class="card-body items-center text-center">
               <img src="images/location.png" alt="">
               <h2 class="card-title">Address</h2>
@@ -303,7 +301,7 @@
           </div>
           <!-- Card 2 -->
           <div
-            class="card bg-base-100 border md:border-t-0 md:border-l-0 md:border-r-0 border-r-[#ddd] rounded-none relative">
+            class="card bg-base-100 border md:border-t-0 md:border-l-0 md:border-r-0 border-b-[#ccc7c7] rounded-none relative bg-[#dddddd57]">
             <div class="card-body items-center text-center">
               <img src="images/call.png" alt="">
               <h2 class="card-title">Call Us</h2>
@@ -313,7 +311,7 @@
           </div>
           <!-- Card 3 -->
           <div
-            class="card bg-base-100 border md:border-t-0 md:border-l-0 border-b-0 border-r-[#ddd] rounded-none relative">
+            class="card bg-base-100 border-b md:border md:border-t-0 md:border-l-0 md:border-b-0 border-[#ccc7c7] rounded-none relative bg-[#dddddd57]">
             <div class="card-body items-center text-center">
               <img src="images/email.png" alt="">
               <h2 class="card-title">Email Us</h2>
@@ -323,7 +321,7 @@
           </div>
           <!-- Card 4 -->
           <div
-            class="card bg-base-100 border md:border-t-0 md:border-l-0 md:border-r-0 border-b-0 border-r-[#ddd] rounded-none relative">
+            class="card bg-base-100 border md:border-t-0 md:border-l-0 md:border-r-0 border-b-0 rounded-none relative bg-[#dddddd57]">
             <div class="card-body items-center text-center">
               <img src="images/time.png" alt="">
               <h2 class="card-title">Working Hours</h2>
@@ -334,19 +332,63 @@
         </div>
         <!-- Form -->
 
-        <form class="space-y-4 w-1/2">
+        <form class="mt-10 md:mt-0 space-y-4 md:w-1/2">
           <input type="text" placeholder="Your Name" class="bg-[#dddddd57] border-none input input-bordered input-md w-full" /> <br>
           <input type="email" placeholder="Your Email" class="input input-bordered input-md w-full bg-[#dddddd57] border-none" /><br>
           <input type="text" placeholder="Subject" class="input input-bordered input-md w-full bg-[#dddddd57] border-none" /><br>
-          <textarea class="w-full textarea textarea-bordered bg-[#dddddd57] border-none" placeholder="Message"></textarea><br>
+          <textarea class="h-36 w-full textarea textarea-bordered bg-[#dddddd57] border-none" placeholder="Message"></textarea><br>
           <a class="w-full btn bg-legal-primary py-4 px-8 text-white">Send Message</a>
         </form>
       </div>
     </section>
   </main>
   <!-- Footer Section -->
-  <footer>
+  <footer class="">
+    <div class="footer bg-black p-10 text-[#8f8f8f] md:p-20">
 
+      <!-- About -->
+      <div class="lg:ml-36">
+        <img src="images/logo.png" alt="">
+        <p class="w-64">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+      </div>
+       <!-- Links -->
+      <nav>
+        <h6 class="text-lg text-white">Useful Link</h6> <br>
+        <a class="link link-hover">Home</a>
+        <a class="link link-hover">About Us</a>
+        <a class="link link-hover">Cases</a>
+        <a class="link link-hover">Blog</a>
+        <a class="link link-hover">Contact Us</a>
+      </nav>
+      <!-- Contact Information -->
+      <nav>
+        <h6 class="text-lg text-white">Contact Now</h6>
+        <br>
+        <p>555 4th 5t NW, Washington <br>
+          DC 20530, United States</p>
+        <p>+88 01750 000 000 <br>
+          +88 01750 000 000</p>
+        <p>info@gmail.com <br>
+          info@gmail.com</p>
+      </nav>
+      <!-- Subscribe -->
+      <form>
+        <h6 class="text-lg text-white">Subscribe</h6> <br>
+        <p class="w-52">Subscribe for our latest & Articles. We Won’t Give You Spam Mails</p>
+        <br>
+        <fieldset class="form-control w-80">
+          <div class="join">
+            <input
+              type="text"
+              placeholder="Email Address"
+              class="input input-bordered join-item" />
+            <button class="btn bg-legal-primary border-none join-item w-14">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
   </footer>
 </body>
 
